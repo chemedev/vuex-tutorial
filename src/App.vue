@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <product-list-one :products="products"></product-list-one>
-    <product-list-two :products="products"></product-list-two>
+    <product-list-one></product-list-one>
+    <product-list-two></product-list-two>
   </div>
 </template>
 
@@ -12,14 +12,7 @@ import productTwo from './components/product-list-two'
 export default {
   name: 'App',
   data() {
-    return {
-      products: [
-        { name: 'Banana Skin', price: 20 },
-        { name: 'Shiny  Stars', price: 40 },
-        { name: 'Green Shells', price: 60 },
-        { name: 'Red Shells', price: 80 }
-      ]
-    }
+    return {}
   },
   components: {
     'product-list-one': productOne,
